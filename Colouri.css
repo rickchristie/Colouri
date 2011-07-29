@@ -7,9 +7,9 @@
 /* Modified from 'Espresso Tutti Colori' and 'Quiet Light' by Ian Beck */
 
 :document-base {
-	color: #000000;
+	color: #333;
 	background-color: #FFFFFF;
-	insertion-point-color: #000000;
+	insertion-point-color: #000;
 	selection-background-color: default;
 	current-line-background-color: rgba(222, 228, 234, 0.4);
 }
@@ -40,7 +40,7 @@ operator {
 }
 
 operator.logical, operator.binary {
-    color: #000;
+    color: #333;
 }
 
 constant, numeric, character {
@@ -62,11 +62,11 @@ function, variable.function {
 }
 
 function.definition {
-    color: #000;
+    color: #333;
 }
 
 name {
-    color: #000;
+    color: #333;
     spell-check: disabled;
 }
 
@@ -134,7 +134,7 @@ php variable.property {
 }
 
 php punctuation.delimiter.pointer {
-    color: #000;
+    color: #333;
 }
 
 php expression.complex variable,
