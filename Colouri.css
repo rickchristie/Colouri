@@ -1,0 +1,309 @@
+/*
+    @theme Colouri
+	@override-placeholders html, php, js, apache, markdown, bash, css
+	@author Rick Christie
+*/
+
+/* Modified from 'Espresso Tutti Colori' and 'Quiet Light' by Ian Beck */
+
+:document-base {
+	color: #000000;
+	background-color: #FFFFFF;
+	insertion-point-color: #000000;
+	selection-background-color: default;
+	current-line-background-color: rgba(222, 228, 234, 0.4);
+}
+
+/* @group Generic */
+
+comment, comment * {
+    color: #b2b2b2;
+    font-weight: normal;
+}
+
+invalid {
+	background-color: #f93232;
+	color: #f9f2ce;
+}
+
+string {
+    color: #bc670f;
+    background-color: #fffaec;
+}
+
+string escape {
+    background-color: #fff4d4;
+}
+
+operator {
+    color: #626fc9;
+}
+
+operator.logical, operator.binary {
+    color: #000;
+}
+
+constant, numeric, character {
+    color: #ab6526;
+}
+
+keyword {
+    color: #626fc9;
+}
+
+variable {
+    color: #26a200;
+    background: #f9fef8;
+}
+
+function, variable.function {
+    color: #6b1eb4;
+    spell-check: disabled;
+}
+
+function.definition {
+    color: #000;
+}
+
+name {
+    color: #000;
+    spell-check: disabled;
+}
+
+/* @end */
+
+/* @group HTML */
+
+html doctype {
+    color: #b2b2b2;
+}
+
+html tag {
+    color: #30a1d1;
+}
+
+html tag name {
+    background: #f3faff;
+    color: #0071c5;
+}
+
+html tag > punctuation.definition {
+    color: #7fc1f0;
+}
+
+html tag string {
+    background: #fff;
+    color: #26a200;
+    background: #f9fef8;
+}
+
+html character.entity {
+    color: #ab6526;
+}
+
+html attribute-value {
+    spell-check: disabled;
+}
+
+html attribute-value punctuation {
+    color: #30a1d1;
+}
+
+/* Deprecated elements */
+html entity.name[text='applet'],
+html entity.name[text='basefont'],
+html entity.name[text='center'],
+html entity.name[text='dir'],
+html entity.name[text='font'],
+html entity.name[text='isindex'],
+html entity.name[text='menu'],
+html entity.name[text='s'],
+html entity.name[text='strike'],
+html entity.name[text='u'] {
+	background: rgba(150, 0, 0, 0.08);
+}
+
+/* @end */
+
+/* @group PHP */
+
+php keyword.variable.language,
+php variable.property {
+    color: #626fc9;
+    background: #f9fcff;
+}
+
+php punctuation.delimiter.pointer {
+    color: #000;
+}
+
+php expression.complex variable,
+php expression.complex punctuation {
+    background: #f9fcff;
+}
+
+php delimiter.source {
+    color: #e14000;
+}
+
+/* @end */
+
+/* @group Apache */
+
+apache keyword.directive {
+	color: #4b83cd;
+}
+
+apache tag {
+	color: #aa3731;
+}
+
+apache punctuation.definition {
+    color: #ddb0ad;
+}
+
+apache entity.name, apache tag > name {
+	color: #aa3731;
+}
+
+apache regex.operator.not {
+	color: #7a3e9d;
+}
+
+apache variable name {
+    color: #26a200;
+}
+
+apache pattern {
+    color: #7a3e9d;
+}
+
+apache substitution {
+    color: #bc670f;
+}
+
+apache flags {
+    color: #383838;
+}
+
+/* @end */
+
+/* @group Regex */
+
+regex {
+    color: #bc670f;
+    background-color: #fffaec;
+}
+
+regex punctuation.definition {
+    background: #fff;
+    color: #30a1d1;
+}
+
+regex escape {
+    background-color: #fff4d4;
+} 
+
+/* @end */
+
+/* @group Bash */
+
+bash identifier.function {
+	color: #6b1eb4;
+	font-weight: normal;
+}
+
+bash identifier.variable {
+	color: #7a3e9d;
+}
+
+/* @end */
+
+/* @group Javascript */
+
+js variable.x-assignment name {
+    color: #6b1eb4;
+    background: #f9fef8;
+}
+
+js variable.DOM {
+    color: #006a00;
+}
+
+/* @end */
+
+/* @group CSS */
+
+css selector {
+    color: #626fc9;
+}
+
+css property-value {
+    color: #26a200;
+    background: #f9fef8;
+}
+
+css property-name {
+    color: #c66600;
+}
+
+css support.function name {
+    color: #626fc9;
+}
+
+css pseudo-class {
+    color: #30a1d1;
+}
+
+/* @end */
+
+/* @group Markdown */
+
+markdown setext {
+    color: #6b1eb4;
+}
+
+markdown header, markdown header name {
+    color: #626fc9;
+    background: #f9fcff;
+}
+
+markdown list > punctuation.definition {
+    color: #26a200;
+    background: #f9fef8;
+}
+
+markdown code {
+    color: #bc670f;
+    background-color: #fffaec;
+}
+
+markdown italic {
+    font-style: italic;
+    color: #7a3e9d;
+    background: #f9fcff;
+}
+
+markdown bold {
+    color: #6b1eb4;
+    font-weight: bold;
+}
+
+markdown blockquote {
+    color: #26a200;
+}
+
+markdown link, markdown image {
+	color: #7a3e9d;
+}
+
+markdown url, markdown email {
+	color: #4b83cd;
+}
+
+markdown separator, markdown hard-break {
+	background: #eff1fa;
+	color: #626fc9;
+}
+
+/* @end */
