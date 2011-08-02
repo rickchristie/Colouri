@@ -51,7 +51,7 @@ keyword {
     color: #626fc9;
 }
 
-variable {
+variable:not(function) {
     color: #26a200;
     background: #f9fef8;
 }
@@ -144,6 +144,10 @@ php expression.complex punctuation {
 
 php delimiter.source {
     color: #e14000;
+}
+
+php variable.class {
+    color: #333;
 }
 
 /* @end */
@@ -240,7 +244,6 @@ css selector {
 
 css property-value {
     color: #26a200;
-    background: #f9fef8;
 }
 
 css property-name {
