@@ -51,7 +51,7 @@ keyword {
     color: #626fc9;
 }
 
-variable:not(function) {
+variable:not(function, class) {
     color: #26a200;
     background: #f9fef8;
 }
