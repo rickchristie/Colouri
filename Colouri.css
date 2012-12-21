@@ -310,3 +310,17 @@ markdown separator, markdown hard-break {
 }
 
 /* @end */
+
+/* @group Python */
+
+function.definition + string.long.quoted.double {
+    color: #b2b2b2;
+    font-weight: normal;
+    background: #fff;
+}
+
+function.definition + string.long.quoted.double punctuation {
+    color: #dddddd;
+}
+
+/* @end */
